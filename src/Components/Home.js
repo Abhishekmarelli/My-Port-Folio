@@ -56,20 +56,19 @@ const Home = () => {
 				<div className="grid grid-cols-12">
 					<div className="col-span-12 lg:col-span-5 xl:col-span-4 lg:order-2 mb-6 lg:mb-0 text-center lg:text-start">
 						<img
-							src="https://cdn.easyfrontend.com/pictures/team/team_13_3.jpg"
+							src=""
 							alt=""
 							className="max-w-full h-[85%] border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
 					</div>
 					<div className="col-span-12 lg:col-span-7 lg:pl-6 xl:pl-12">
-						<p className="text-xl leading-normal mb-2 opacity-50">
-							FrontEnd Developer
+						<p className="text-2xl leading-normal mb-2 opacity-50">
+							Hello I'm 
 						</p>
 						<h2 className="text-3xl leading-none md:text-5xl font-bold mb-6">
 							Abhishek Reddy Marelli
 						</h2>
 						<p className="text-xl leading-normal opacity-75 mb-2">
-							I'm a UI/UX Designer based in Bangladesh and enjoy playing with
-							colors. I love travelling, photography & music.
+							a passionate frontend developer focused on creating interactive, accessible, and responsive websites.
 						</p>
 						<div className="mt-12 lg:ml-12 p-4 md:px-12 lg:py-6 border-l">
 							<ProfileKeyInfo />
