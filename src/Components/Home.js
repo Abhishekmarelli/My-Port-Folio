@@ -6,6 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
+import profile from "../Assets/img.JPG"
 
 const socialLinks = [
 	{ icon: faTwitter, href: "#" },
@@ -54,11 +55,11 @@ const Home = () => {
 		<header className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#373572] dark:text-white">
 			<div className="container px-4 relative">
 				<div className="grid grid-cols-12">
-					<div className="col-span-12 lg:col-span-5 xl:col-span-4 lg:order-2 mb-6 lg:mb-0 text-center lg:text-start">
+					<div className="col-span-12 lg:col-span-5 xl:col-span-4 lg:order-2 lg:mb-0 text-center lg:text-center">
 						<img
-							src=""
-							alt=""
-							className="max-w-full h-[85%] border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
+							src={profile}
+							alt="profile_img"
+							className="max-w-full border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
 					</div>
 					<div className="col-span-12 lg:col-span-7 lg:pl-6 xl:pl-12">
 						<p className="text-2xl leading-normal mb-2 opacity-50">
