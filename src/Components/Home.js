@@ -55,11 +55,11 @@ const Home = () => {
 		<header id='Home' className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#000000] dark:text-white">
 			<div className="container px-4 relative">
 				<div className="grid grid-cols-12">
-					<div className="col-span-12 lg:col-span-5 xl:col-span-4 lg:order-2 lg:mb-0 text-center lg:text-center">
+					<div className="col-span-12 lg:col-span-5 xl:col-span-5 lg:order-2 lg:mb-0 text-center lg:text-center">
 						<img
 							src={profile}
 							alt="profile-img"
-							className="max-w-full max-h-96 border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
+							className="max-w-full max-h-[50%] border-[10px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto max-md:max-h-96"/>
 					</div>
 					<div className="col-span-12 lg:col-span-7 lg:pl-6 xl:pl-12">
 						<p className="text-2xl leading-normal mb-2 opacity-75">
