@@ -1,17 +1,17 @@
 import React from 'react'
 import {
-	faTwitter,
-	faDribbble,
-	faBehance,
+	faGithub,
+	faLinkedinIn,
+	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import PropTypes from "prop-types";
 import profile from "../Assets/img.JPG"
 
 const socialLinks = [
-	{ icon: faTwitter, href: "#" },
-	{ icon: faDribbble, href: "#" },
-	{ icon: faBehance, href: "#" },
+	{ icon: faGithub, href: "https://github.com/Abhishekmarelli" },
+	{ icon: faLinkedinIn, href: "https://www.linkedin.com/in/abhishek-reddy-6b2715147/" },
+	{ icon: faInstagram, href: "#" },
 ];
 
 const infoList = [
@@ -37,8 +37,7 @@ const SocialLinks = ({ links }) => (
 			<li className="mr-5" key={i}>
 				<a
 					href={link.href}
-					className="text-2xl opacity-70 hover:opacity-100 transition duration-300"
-				>
+					className="text-2xl opacity-70 hover:opacity-100 transition duration-300">
 					<FontAwesomeIcon icon={link.icon} />
 				</a>
 			</li>
@@ -52,14 +51,14 @@ SocialLinks.propTypes = {
 
 const Home = () => {
   return (
-		<header className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#373572] dark:text-white">
+		<header id='Home' className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#373572] dark:text-white">
 			<div className="container px-4 relative">
 				<div className="grid grid-cols-12">
 					<div className="col-span-12 lg:col-span-5 xl:col-span-4 lg:order-2 lg:mb-0 text-center lg:text-center">
 						<img
 							src={profile}
-							alt="profile_img"
-							className="max-w-full border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
+							alt=""
+							className="max-w-full max-h-96 border-[12px] border-white shadow-xl dark:border-gray-700 rounded-tl-[30px] rounded-br-[30px] rounded-tr-[30%] rounded-bl-[30%] mx-auto"/>
 					</div>
 					<div className="col-span-12 lg:col-span-7 lg:pl-6 xl:pl-12">
 						<p className="text-2xl leading-normal mb-2 opacity-50">

@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Card = ({Project}) => {
-    const {title ,image, description} = Project
+    const {title ,image, description,link} = Project
   return (
     <div className="relative flex flex-col mt-6 text-gray-700 bg-gray-100 shadow-md bg-clip-border rounded-xl w-96 dark:bg-[#0b1b30] dark:text-white">
   <div
@@ -20,11 +21,11 @@ const Card = ({Project}) => {
     </p>
   </div>
   <div className="p-6 pt-0">
-    <button
+    <Link to={link}
       className="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
       type="button">
       Source
-    </button>
+    </Link>
   </div>
 </div> 
   )
