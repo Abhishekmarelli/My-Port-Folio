@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button,Link} from 'react-scroll'
 
 const About = () => {
   const Actively_using =['Html','Css','Tailwindcss','SQL',
@@ -19,12 +20,26 @@ const About = () => {
         <div className='grid grid-cols-2 py-4 max-md:grid-cols-1'>
           <div className='pl-20 max-md:pl-10'>
           <h1>Want to know me?</h1>
-            <p className='py-5'>I'm a <span className='font-bold'>Frontend Developer </span> passionate about crafting interactive, accessible, and responsive websites. Check out <span className='text-red-500 hover:underline'> My Projects Section </span> for some of the beautiful websites I've built.</p>
+            <p className='py-5'>I'm a <span className='font-bold'>Frontend Developer </span> passionate about crafting interactive, accessible, and responsive websites. Check out <span className='text-red-500 hover:underline'>
+               <Link activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-20}
+                duration={1000}
+                to="Projects">My Projects Section </Link> </span> for some of the beautiful websites I've built.</p>
             <p>I'm currently open to Job opportunities where I can contribute to your business and create delightful user experiences. Feel free to contact me if you find my skills useful.</p>
 
-            <button class="relative my-2 px-8 py-2 rounded-md isolation-auto z-10 border-2 border-cyan-800
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-cyan-200 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">Contact Me</button>
-          </div>
+           <Button class="relative my-2 px-8 py-2 rounded-md isolation-auto z-10 border-2 border-cyan-800
+        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-cyan-200 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
+          <Link activeClass="active"
+            spy={true}
+            smooth={true}
+            offset={-20}
+            duration={1000}
+            to="Contact">Contact Me
+            </Link>
+            </Button>
+          </div> 
           
           <div className='pl-20 max-md:mt-10 max-md:pl-10'>
           <h1>Skills and Technologies</h1>
