@@ -8,7 +8,7 @@ const About = () => {
     'Javascript',
     'React',
     'Git',
-    'Github',]
+    'Github','Firebase']
    const Familiar_with=['Node.js','Express.js','MongoDb']
   return (
     <div id='About' className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#0d0c36] dark:text-white">

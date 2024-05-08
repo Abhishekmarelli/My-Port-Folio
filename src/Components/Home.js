@@ -19,7 +19,7 @@ const socialLinks = [
 const infoList = [
 	{ label: "Born in", value: "India" },
 	{ label: "Experience", value: "3 Years" },
-	{ label: "Date of Birth", value: "27 June 1998" },
+	{ label: "Date of Birth", value: "27 June 1999" },
 ];
 
 const ProfileKeyInfo = () => (
