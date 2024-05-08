@@ -9,10 +9,8 @@ const Contact = () => {
 			<div className="grid grid-cols-12">
 				<div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:px-16 xl:px-20">
 					<img
-
 					src={message}
 					alt='message'
-					
 					/>
 				</div>
 			<div className="col-span-12 lg:col-span-6 lg:col-start-7 lg:px-16 xl:px-20">	

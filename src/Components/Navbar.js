@@ -27,7 +27,7 @@ const Navbar = () => {
       <header>
       <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto">
-          <Link href="#Home" className="flex items-center">
+          <Link to="Home" className="flex items-center">
             <img src={img} className="mr-2 h-8 sm:h-9 mix-blend-overley" alt="Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"></span>
           </Link>

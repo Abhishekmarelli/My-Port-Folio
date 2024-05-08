@@ -40,9 +40,8 @@ const Projects = () => {
                         </h2>
                     </div>
                 </div>
-                
                 <div className="grid grid-cols-3 gap-6 gap-y-8 lg:gap-y-8  mx-auto max-md:grid-cols-1 max-md:justify-items-center">
-                    {portfolioList.map((project)=> <Card Project={project}/>)}
+                    {portfolioList.map((project)=> <Card key={project.title} Project={project}/>)}
                 </div>
             </div>
         </section>

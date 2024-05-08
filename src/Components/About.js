@@ -8,8 +8,8 @@ const About = () => {
     'Javascript',
     'React',
     'Git',
-    'Github']
-   const Familiar_with=['Node.js','Express.js']
+    'Github',]
+   const Familiar_with=['Node.js','Express.js','MongoDb']
   return (
     <div id='About' className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#0d0c36] dark:text-white">
         <h1 className="text-center underline text-3xl">About Me</h1>
@@ -29,8 +29,8 @@ const About = () => {
                 to="Projects">My Projects Section </Link> </span> for some of the beautiful websites I've built.</p>
             <p>I'm currently open to Job opportunities where I can contribute to your business and create delightful user experiences. Feel free to contact me if you find my skills useful.</p>
 
-           <Button class="relative my-2 px-8 py-2 rounded-md isolation-auto z-10 border-2 border-cyan-800
-        before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-cyan-200 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
+           <Button className="relative my-2 px-8 py-2 rounded-md isolation-auto z-10 border-2 border-cyan-800
+            before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-right-full before:hover:right-0 before:rounded-full  before:bg-cyan-200 before:-z-10  before:aspect-square before:hover:scale-150 overflow-hidden before:hover:duration-700">
           <Link activeClass="active"
             spy={true}
             smooth={true}
@@ -47,11 +47,11 @@ const About = () => {
           <div className='py-2'>
           <span className='font-bold'>Actively Using :</span>
           <div className='flex flex-wrap gap-2 py-2'>
-          {Actively_using.map((i)=> (<span className='text-center border-2 border-cyan-400 rounded-xl py-1 px-4 '>{i}</span>))}
+          {Actively_using.map((i)=> (<span key={i} className='text-center border-2 border-cyan-400 rounded-xl py-1 px-4 '>{i}</span>))}
           </div>
           <span className='font-bold'>Familiar With :</span>
           <div className='flex flex-wrap gap-2 py-2'>
-          {Familiar_with.map((i)=> (<span className='text-center border-2 border-cyan-400 rounded-xl py-1 px-4 '>{i}</span>))}
+          {Familiar_with.map((i)=> (<span key={i} className='text-center border-2 border-cyan-400 rounded-xl py-1 px-4 '>{i}</span>))}
           </div>
           </div>
           </div>
