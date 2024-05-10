@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import message from '../Assets/message.png'
 import { firestore } from '../config';
 import { collection,addDoc } from 'firebase/firestore';
-
+import { motion } from 'framer-motion';
 
 const Contact = () => {
 	const ref = collection(firestore,'messages')
@@ -61,11 +61,12 @@ const Contact = () => {
 				></textarea>
 			</div>
 			<div className="text-start">
-				<button
+				<motion.button
+				whileHover={{scale:0.95, rotate:1}}
 					type="submit"
 					className="bg-blue-600 hover:bg-opacity-90 text-white px-8 py-3 rounded mb-4">
 					Submit
-				</button>
+				</motion.button>
 			</div>
 		</form>
 	</div>

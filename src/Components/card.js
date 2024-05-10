@@ -1,10 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { easeInOut, motion } from 'framer-motion'
 
 const Card = ({Project}) => {
     const {title ,image, description,link} = Project
   return (
-    <div className="relative flex flex-col mt-6 text-gray-700 bg-gray-100 shadow-md bg-clip-border rounded-xl w-96 dark:bg-[#0b1b30] dark:text-white">
+    <motion.div whileHover={{scale:0.95}}
+    transition={{
+      duration:0.25,
+      ease:easeInOut}} className="relative flex flex-col mt-6 text-gray-700 bg-gray-100 shadow-md bg-clip-border rounded-xl w-96 dark:bg-[#0b1b30] dark:text-white">
   <div
     className="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
     <img
@@ -27,7 +31,7 @@ const Card = ({Project}) => {
       Source
     </Link>
   </div>
-</div> 
+</motion.div> 
   )
 }
 
