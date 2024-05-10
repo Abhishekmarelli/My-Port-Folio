@@ -15,7 +15,7 @@ const Footer = () => {
     { icon: faInstagram, href: "#" },
   ];
   return (
-    <div className='bg-white dark:bg-slate-900 flex justify-around py-10'>
+    <div className='bg-slate-100 dark:bg-slate-900 flex justify-around py-10'>
       <div className='flex'>
 		<img src={logo} alt='logo' className="mr-2 h-8 sm:h-9 mix-blend-overley" />
       <p className='text-slate-800 dark:text-white'>Thanks for checking my portfolio. I'm currently open to work.</p>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button,Link} from 'react-scroll'
-import { motion } from 'framer-motion'
+import { motion,easeInOut} from 'framer-motion'
 
 const About = () => {
   const Actively_using =['Html','Css','Tailwindcss','SQL',
@@ -12,14 +12,18 @@ const About = () => {
     'Github','Firebase']
    const Familiar_with=['Node.js','Express.js','MongoDb']
   return (
-    <div id='About' className="ezy__header8 dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#0d0c36] dark:text-white">
+    <div id='About' className="ezy__header8 dark py-4 md:py-10 bg-slate-100 dark:bg-[#0b1727] text-[#0d0c36] dark:text-white">
         <h1 className="text-center underline text-3xl">About Me</h1>
       <p className='text-center py-4'>
           You will find a little intro about me and the skills and technologies
           I use daily.
         </p>
-        <div  className='grid grid-cols-2 py-4 max-md:grid-cols-1'>
-          <motion.div className=' pl-20 max-md:pl-10'>
+      <motion.div  initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{
+          duration:2,
+      ease:easeInOut}} className='grid grid-cols-2 py-4 max-md:grid-cols-1'>
+          <div className=' pl-20 max-md:pl-10'>
           <h1>Want to know me?</h1>
             <p className='py-5'>I'm a <span className='font-bold'>Frontend Developer </span> passionate about crafting interactive, accessible, and responsive websites. Check out <span className='text-red-500 hover:underline'>
                <Link activeClass="active"
@@ -40,7 +44,7 @@ const About = () => {
             to="Contact">Contact Me
             </Link>
             </Button>
-          </motion.div> 
+          </div> 
           
           <motion.div className='pl-20 max-md:mt-10 max-md:pl-10'>
           <h1>Skills and Technologies</h1>
@@ -56,9 +60,9 @@ const About = () => {
           </div>
           </div>
           </motion.div>
-
+          </motion.div>
         </div>
-    </div>
+    
   )
 }
 

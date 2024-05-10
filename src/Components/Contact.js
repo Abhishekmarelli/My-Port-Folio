@@ -35,7 +35,7 @@ const Contact = () => {
 
 	}
     return (
-      <section id='Contact' className="ezy__contact8 light py-4 md:py-14 bg-[#ffffff] text-zinc-900 dark:bg-[#0b1727] dark:text-white relative overflow-hidden">
+      <section id='Contact' className="ezy__contact8 light py-4 md:py-14 bg-slate-100 text-zinc-900 dark:bg-[#0b1727] dark:text-white relative overflow-hidden">
 
 			<ToastContainer/>
 			<div className="container px-4">
@@ -43,7 +43,7 @@ const Contact = () => {
 				<div className="col-span-12 lg:col-span-5 lg:col-start-2 lg:px-16 xl:px-20">
 					<img src={message} alt='message'/> </div>
 			<div className="col-span-12 lg:col-span-6 lg:col-start-7 lg:px-16 xl:px-20">	
-      		<div className="bg-white dark:bg-black dark:bg-opacity-20 bg-opacity-20 rounded-xl relative p-6 md:p-12">
+      		<div className="bg-slate-500 dark:bg-black dark:bg-opacity-20 bg-opacity-20 rounded-xl relative p-6 md:p-12">
 			<h2 className="text-2xl md:text-[25px] leading-none font-bold mb-4">Contact ME</h2>
 
       	<form id='input-form' onSubmit={handlemessage}>

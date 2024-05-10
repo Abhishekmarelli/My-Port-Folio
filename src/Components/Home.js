@@ -49,7 +49,7 @@ SocialLinks.propTypes = {
 
 const Home = () => {
   return (
-		<header id='Home' className="dark py-4 md:py-10 bg-white dark:bg-[#0b1727] text-[#000000] dark:text-white">
+		<header id='Home' className="dark py-4 md:py-10 bg-slate-100 dark:bg-[#0b1727] text-[#000000] dark:text-white">
 			<div className="container px-4 relative">
 				<div className="grid grid-cols-12">
 					<motion.div

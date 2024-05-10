@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || false);
+  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || true);
   const [hidden,sethidden] = useState(true)
   const [ActiveNav,setActiveNav] =useState('Home');
   const Activeclass = "text-base block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white";
@@ -25,7 +25,7 @@ const Navbar = () => {
 
     return (
       <header>
-      <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900">
+      <nav className="bg-gray-50 border-b-2 border-gray-200 px-2 sm:px-4 py-2 dark:bg-gray-900 dark:border-b-1 dark:border-gray-900">
         <div className="flex flex-wrap justify-between items-center mx-auto">
           <Link to="Home" className="flex items-center">
             <img src={img} className="mr-2 h-8 sm:h-9 mix-blend-overley" alt="Logo" />
