@@ -15,7 +15,7 @@ const socialLinks = [
 const infoList = [
 	{ label: "Born in", value: "India" },
 	{ label: "Experience", value: "3 Years" },
-	{ label: "Date of Birth", value: "27 June 1999" },
+	{ label: 'Role' , value:"FrontEnd Developer"}
 ];
 
 const ProfileKeyInfo = () => (
@@ -53,7 +53,7 @@ const Home = () => {
 			<div className="container px-4 relative">
 				<div className="grid grid-cols-12">
 					<motion.div
-					initial={{marginLeft:400}}
+					initial={{marginLeft:300}}
 					whileInView={{marginLeft:0}}
 					transition={{
 						duration:0.5,

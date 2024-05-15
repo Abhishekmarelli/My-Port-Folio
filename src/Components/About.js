@@ -25,7 +25,7 @@ const About = () => {
       ease:easeInOut}} className='grid grid-cols-2 py-4 max-md:grid-cols-1'>
           <div className=' pl-20 max-md:pl-10'>
           <h1>Want to know me?</h1>
-            <p className='py-5'>I'm a <span className='font-bold'>Frontend Developer </span> passionate about crafting interactive, accessible, and responsive websites. Check out <span className='text-red-500 hover:underline'>
+            <p className='py-5'>I'm a <span className='font-bold'>Frontend Developer </span> passionate about crafting engaging, inclusive, and adaptable websites. Check out <span className='text-red-500 hover:underline'>
                <Link activeClass="active"
                 spy={true}
                 smooth={true}
